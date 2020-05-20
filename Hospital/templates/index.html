@@ -20,29 +20,37 @@
         crossorigin="anonymous"></script>
 
 
-        <style>
-            .card{
-                box-shadow: 0px 0px 44px 2px rgba(0,0,0,0.2);
-            }
-            .btn{
-                background-color: #6c63ff;
-                border: none;
-                border-color: #6c63ff!important;
-            }
-            .btn:hover{
-                background-color: #5751c2;
-            }
-            .btn:active{
-                background-color: #5751c2!important;
-            }
-        </style>
+    <style>
+        .card {
+            box-shadow: 0px 0px 44px 2px rgba(0, 0, 0, 0.2);
+            min-height: 380px;
+        }
+        .card img{
+            width:253px;
+            height:180px;
+        }
+        .btn {
+            background-color: #6c63ff;
+            border: none;
+            border-color: #6c63ff !important;
+        }
+
+        .btn:hover {
+            background-color: #5751c2;
+        }
+
+        .btn:active {
+            background-color: #5751c2 !important;
+        }
+    </style>
 
 </head>
 
 <body>
     <!--Header-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" style="width: 60px;"></a>
+        <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}"
+                style="width: 60px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -61,38 +69,50 @@
 
     <div class="container" style="position:relative; top:130px;">
         <div class="row align-items-start">
-            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center" style="margin-bottom: 20px;">
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center" style="margin-bottom: 20px;">
                 <!--Paciente-->
                 <div class="card" style="width: 18rem;">
                     <img src="{% static 'img/hospital1.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Cadastrar Paciente</h5>
-                        <p class="card-text">Clique neste card para poder realizar o cadastro de um Paciente</p>
+                        <p class="card-text">Clique aqui para cadastrar um <b>Paciente</b></p>
                         <a href="/admin/pacientes/paciente/add/" class="btn btn-primary">Cadastrar</a>
                     </div>
                 </div>
                 <!--Paciente-->
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center" style="margin-bottom: 20px;">
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center" style="margin-bottom: 20px;">
                 <!--Medico-->
                 <div class="card" style="width: 18rem;">
                     <img src="{% static 'img/hospital2.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Cadastrar Medico</h5>
-                        <p class="card-text">Clique neste card para poder realizar o cadastro de um Paciente</p>
+                        <p class="card-text">Clique aqui para cadastrar um <b>Médico</b></p>
                         <a href="/admin/funcionarios/medico/add/" class="btn btn-primary">Cadastrar</a>
                     </div>
                 </div>
                 <!--Medico-->
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
                 <!--Consulta-->
                 <div class="card" style="width: 18rem;">
                     <img src="{% static 'img/hospital3.png' %}" class="card-img-top" alt="">
                     <div class="card-body">
-                        <h5 class="card-title">Cadastrar Paciente</h5>
-                        <p class="card-text">Clique neste card para poder realizar o cadastro de um Paciente</p>
-                        <a href="#" class="btn btn-primary">Cadastrar</a>
+                        <h5 class="card-title">Ver Consultas</h5>
+                        <p class="card-text">Clique aqui para poder ver todas <b>Consultas</b> marcadas</p>
+                        <a href="admin/consultas/consulta/" class="btn btn-primary">Cadastrar</a>
+                    </div>
+                </div>
+                <!--Consulta-->
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+                <!--Consulta-->
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'img/hospital5.png' %}" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Ver Exames</h5>
+                        <p class="card-text">Clique neste card para poder ver todos os <b>Exames</b></p>
+                        <a href="admin/consultas/consulta/" class="btn btn-primary">Cadastrar</a>
                     </div>
                 </div>
                 <!--Consulta-->
