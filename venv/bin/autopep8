@@ -1,4 +1,4 @@
-#!/home/breno/Projetos/venv/bin/python3
+#!/home/breno/Downloads/pi/venv/bin/python3
 # EASY-INSTALL-ENTRY-SCRIPT: 'autopep8==1.5.2','console_scripts','autopep8'
 __requires__ = 'autopep8==1.5.2'
 import re

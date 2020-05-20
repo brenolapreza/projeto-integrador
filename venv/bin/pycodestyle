@@ -1,4 +1,4 @@
-#!/home/breno/Projetos/venv/bin/python3
+#!/home/breno/Downloads/pi/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
